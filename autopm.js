@@ -10,6 +10,7 @@ let fbShortenToken = process.env.fbtk20;
 let resp_text = process.env.resp_text;
 let PM_text = process.env.PM_text;
 let fansPageid=process.env.fansPageid;
+let postid=process.env.postid;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: true
@@ -36,7 +37,7 @@ app.get('/web', function(req, res) {
     if (data.object === 'page') {
       data.entry.forEach(function(entry) {
         entry.changes.forEach(function(event) {
-            if (event.field=="feed" && event.value.sender_id!=fansPageid && event.value.verb === 'add') {
+            if (event.value.post_id==postid && event.field=="feed" && event.value.sender_id!=fansPageid && event.value.verb === 'add') {
               weeklyFacebookPost( event.value.message , event.value.sender_name , event.value.comment_id);
             } 
           });
