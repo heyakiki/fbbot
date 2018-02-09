@@ -14,9 +14,9 @@ const FB_APP_SECRET = process.env.FACEBOOK_APP_SECRET;
 let fbShortenToken = process.env.fbtk20;
 
 //固定抓某篇文章的ID (粉絲團ID+PostID)
-let postid="883537581754064_1562749370499545";
+let postid="100951582887_10156097629257888";
 //粉絲團ID
-let fansPageid="883537581754064";
+let fansPageid="100951582887";
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -109,15 +109,15 @@ function weeklyFacebookPost(msg,name , commentId) {
                   scnum = parseInt(tmp_num.substr(0,1),10)+ parseInt(tmp_num.substr(1,1),10);
                 }
                 console.log("scnum2=" + scnum);
-                if (scnum==1){ansmsg="恭喜您抽中上上籤(憑籤詩回NOVA免費送LED隨行燈乙份)，今年財神超眷顧你，不管是就業或創業，存款大增富貴無窮。";}
-                if (scnum==2){ansmsg="恭喜您抽中大吉(憑籤詩回NOVA免費送LED隨行燈乙份)，今年運勢高漲，荷包滿滿，事業順利愛情更是大豐收喔。";}
-                if (scnum==3){ansmsg="恭喜您抽中小吉(憑籤詩回NOVA免費送LED隨行燈乙份)，今年吉星照命財運大增，貴人協力下財運大漲，運勢一路攀升。";}
-                if (scnum==4){ansmsg="恭喜您抽中吉(憑籤詩回NOVA免費送LED隨行燈乙份)， 今年喜事一波接一波，財路大開，事業發展迅速，名利兼收。";}
-                if (scnum==5){ansmsg="恭喜您抽中大大吉(憑籤詩回NOVA免費送LED隨行燈乙份)，今年桃花大開情場得意，與戀人甜甜蜜蜜，與家人和和睦睦，超完美。";}
-                if (scnum==6){ansmsg="恭喜您抽中小吉(憑籤詩回NOVA免費送LED隨行燈乙份)，今年事業運平穩，有貴人幫助，無論加薪或升職運都有不俗的提升。";}
-                if (scnum==7){ansmsg="恭喜您抽中上上籤(憑籤詩回NOVA免費送LED隨行燈乙份)，今年吉星非常庇佑你，事業上突飛猛進，升職加薪，得到上司的賞識與提拔。";}
-                if (scnum==8){ansmsg="恭喜您抽中上上籤(憑籤詩回NOVA免費送LED隨行燈乙份)，今年的你財祿雙至好旺旺，不僅會富還會貴，權利名利更跨進一大步。";}
-                if (scnum==9){ansmsg="恭喜您抽中大吉(憑籤詩回NOVA免費送LED隨行燈乙份)，今年雀財吉星相助，家業興旺，事業成功，日子蒸蒸日上，幸福和美，不讓人羨慕都難吶！。";}
+                if (scnum==1){ansmsg="恭喜您抽中上上籤(2/25前憑籤詩回NOVA免費送LED隨行燈1份)，今年財神超眷顧你，不管是就業或創業，存款大增富貴無窮。";}
+                if (scnum==2){ansmsg="恭喜您抽中大吉(2/25前憑籤詩回NOVA免費送LED隨行燈1份)，今年運勢高漲，荷包滿滿，事業順利愛情更是大豐收喔。";}
+                if (scnum==3){ansmsg="恭喜您抽中小吉(2/25前憑籤詩回NOVA免費送LED隨行燈1份)，今年吉星照命財運大增，貴人協力下財運大漲，運勢一路攀升。";}
+                if (scnum==4){ansmsg="恭喜您抽中吉(2/25前憑籤詩回NOVA免費送LED隨行燈1份)， 今年喜事一波接一波，財路大開，事業發展迅速，名利兼收。";}
+                if (scnum==5){ansmsg="恭喜您抽中大大吉(2/25前憑籤詩回NOVA免費送LED隨行燈1份)，今年桃花大開情場得意，與戀人甜甜蜜蜜，與家人和和睦睦，超完美。";}
+                if (scnum==6){ansmsg="恭喜您抽中小吉(2/25前憑籤詩回NOVA免費送LED隨行燈1份)，今年事業運平穩，有貴人幫助，無論加薪或升職運都有不俗的提升。";}
+                if (scnum==7){ansmsg="恭喜您抽中上上籤(2/25前憑籤詩回NOVA免費送LED隨行燈1份)，今年吉星非常庇佑你，事業上突飛猛進，升職加薪，得到上司的賞識與提拔。";}
+                if (scnum==8){ansmsg="恭喜您抽中上上籤(2/25前憑籤詩回NOVA免費送LED隨行燈1份)，今年的你財祿雙至好旺旺，不僅會富還會貴，權利名利更跨進一大步。";}
+                if (scnum==9){ansmsg="恭喜您抽中大吉(2/25前憑籤詩回NOVA免費送LED隨行燈1份)，今年雀財吉星相助，家業興旺，事業成功，日子蒸蒸日上，幸福和美，不讓人羨慕都難吶！。";}
                 
               }
               else
