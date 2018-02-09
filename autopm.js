@@ -14,9 +14,9 @@ const FB_APP_SECRET = process.env.FACEBOOK_APP_SECRET;
 let fbShortenToken = process.env.fbtk20;
 
 //固定抓某篇文章的ID (粉絲團ID+PostID)
-let postid="495470820818248_565034437195219";
+let postid="883537581754064_1562749370499545";
 //粉絲團ID
-let fansPageid="495470820818248";
+let fansPageid="883537581754064";
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
